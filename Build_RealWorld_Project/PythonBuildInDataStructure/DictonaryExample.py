@@ -41,3 +41,31 @@ print(student.get('grade'))
 student['grade']="123"
 print(student)
 
+# Deleting the Dictionary
+#==========================
+
+del student['grade']
+
+print(student)
+
+# Dictionary Methods
+
+key=student.keys()
+print(key)
+value=student.values()
+print(value)
+
+items=student.items()
+print(items)
+
+
+for keys in student.keys():
+    print(keys)
+
+for values in student.values():
+    print(values)
+
+    #Itertate
+
+for key,value in student.items():
+    print(f"{key}:{value}")
